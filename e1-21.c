@@ -1,3 +1,4 @@
+/* Exercise 1-21. entab */
 #include <stdio.h>
 
 #define TABSTOP 8
@@ -26,8 +27,8 @@ main()
     } else {
       int i;
 
-      /* 文字を出力する前にためていた空白を出力する */
-      /* ここでタブにする必要はない */
+      /* 文字だったらタブストップ未満の空白を出力し、
+         文字を出力し、スペースカウントをリセットする */
       if (nspace > 0) {
 	for (i=0; i < nspace; ++i) {
 	  putchar(' ');
